@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="background-color: white">
+    <style>
+      .circle {
+        width: 30px;
+        height: 30px;
+        background-color: darkslategray;
+        border-radius: 50%; /* Makes it a circle */
+        /* justify-content: center; */
+        /* align-items: center; */
+        color: white; /* Text color inside the circle */
+        /* font-family: Arial, sans-serif; */
+        font-size: 20px; /* Adjust font size */
+        text-align: center;
+        padding-right: 8px;
+        padding-left: 5px;
+      }
+    </style>
+    <nav
+      class="navbar navbar-expand-sm navbar-dark"
+      style="background-color: black"
+    >
+      <!-- Brand and Logo -->
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img
+          src="Assets/image/Fabicon1.png"
+          alt=""
+          style="
+            width: 60px;
+            height: auto;
+            padding-top: 5px;
+            padding-right: 10px;
+          "
+        />
+        <div>
+          <h1
+            style="
+              font-size: 30px;
+              font-family: 'Brush Script MT', cursive;
+              color: gold;
+              text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+              margin: 0;
+            "
+          >
+            Radiant Memory
+          </h1>
+          <p style="font-size: 12px; font-family: cursive; margin: 0">
+            Crafting Memories, Capturing Moments
+          </p>
+        </div>
+      </a>
+      <!-- Navbar Toggler -->
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <!-- Center Section: Dropdown and Search -->
+        <div class="mx-auto d-flex">
+          <form class="form-inline my-2 my-lg-0 ml-3">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <ul class="navbar-nav" style="margin-right: -150px">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Services</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+            </div>
+          </li>
+        </ul>
+        <!-- Right Section: Navbar Items -->
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Specility.html">Specility</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <i
+          class="circle"
+          aria-hidden="true"
+          style="background-color: darkslategray"
+          >T</i
+        >
+      </div>
+    </nav>
+    <!-- navbar end -->
+     <div class="container-fluid" style="padding-bottom: 80px;">
+    <div
+      id="carouselId"
+      class="carousel slide"
+      data-ride="carousel"
+      
+    >
+      <ol class="carousel-indicators" style="width: 1100px">
+        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselId" data-slide-to="1"></li>
+        <li data-target="#carouselId" data-slide-to="2"></li>
+      </ol>
+      <div
+        class="carousel-inner"
+        role="listbox"
+        style="width: 1250px; margin-left: 120px"
+      >
+        <div class="carousel-item active">
+          <img
+            src="Assets/image/image.png"
+            alt="First slide"
+            style="
+              /* margin-left: 300px; */
+              position: relative;
+              width: 1250px;
+              height: 500px;
+              margin-top: 50px;
+              border-radius: 20px;
+            "
+          />
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h3>Title</h3>
+            <p>Description</p>
+          </div> -->
+        </div>
+        <div class="carousel-item" style="width: 1250px">
+          <img
+            src="Assets/image/image1.png"
+            alt="Second slide"
+            style="
+              /* margin-left: 300px; */
+              position: relative;
+              width: 1250px;
+              height: 500px;
+              margin-top: 50px;
+              border-radius: 20px;
+            "
+          />
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h3>Title</h3>
+            <p>Description</p>
+          </div> -->
+        </div>
+        <div class="carousel-item" style="width: 1250px">
+          <img
+            src="Assets/image/image2.png"
+            alt="Third slide"
+            style="
+              /* margin-left: 300px; */
+              position: relative;
+              width: 1250px;
+              height: 500px;
+              margin-top: 50px;
+              border-radius: 20px;
+            "
+          />
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h3>Title</h3>
+            <p>Description</p>
+          </div> -->
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselId"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselId"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+    <div class="container-fluid" style="background-color: rgb(233, 225, 166);">
+      <!-- <div class="container-fluid"> -->
+        <div class="row" >
+          <div class="col-md-6" style="padding-left: 100px;padding-top: 20px; ">
+            <h2>About Us:</h2>
+            <p>Radiant Memories is a passionate team of professional photographers with years of experience in capturing life’s most cherished moments. Whether it’s a wedding, family gathering, or special event, we specialize in turning fleeting moments into timeless memories that you can treasure forever. As we continue to grow, we are excited to step into the digital world with a portfolio website that showcases our creative work, diverse skills, and professional accomplishments. This platform offers an easy way for you to explore our stunning projects, learn more about the services we provide, and connect with us for inquiries or bookings. Our goal is to give you a seamless experience that not only highlights our work but also makes it easy to reach out and make your memories shine with brilliance and creativity. Let us help you preserve your most meaningful moments in a way that will last a lifetime.</p>
+            <p class="lead">
+              <a class="btn btn-danger btn-lg" href="about.html" role="button"
+                >Read More</a
+              >
+            </p>
+            
+          </div>
+          <div class="col-md-6" style="padding-top: 40px; ">
+            <img src="Assets/image/about1.png" alt="" style="height: 350px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 20px; margin-right: 350px; padding-bottom: 50px;">
+      <h2>Our Services:</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <a href="">
+            <div
+              class="container"
+              style="
+                border: 10px;
+                background-color: rgb(214, 233, 251);
+                width: 330px;
+                height: 250px;
+              "
+            >
+              <img
+                src="Assets/image/image.png"
+                alt=""
+                style="width: 300px; height: 200px; padding-top: 15px"
+              />
+
+              <div
+                class="col-md-1"
+                style="
+                  left: 90px;
+                  font-size: x-large;
+                  padding-top: 10px;
+                  font-family: 'Times New Roman', Times, serif;
+                "
+              >
+                WorkShop
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <div
+              class="container"
+              style="
+                margin-left: 60px;
+                border: 10px;
+                background-color:rgb(214, 233, 251);
+                width: 330px;
+                height: 250px;
+              "
+            >
+              <img
+                src="Assets/image/image.png"
+                alt=""
+                style="width: 300px; height: 200px; padding-top: 15px"
+              />
+
+              <div
+                class="col-md-1"
+                style="
+                  left: 90px;
+                  left: 90px;
+                  font-size: x-large;
+                  padding-top: 10px;
+                  font-family: 'Times New Roman', Times, serif;
+                "
+              >
+                WorkShop
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <div
+              class="container"
+              style="
+                margin-left: 120px;
+                border: 10px;
+                background-color: rgb(214, 233, 251);
+                width: 330px;
+                height: 250px;
+              "
+            >
+              <img
+                src="Assets/image/image.png"
+                alt=""
+                style="width: 300px; height: 200px; padding-top: 15px"
+              />
+
+              <div
+                class="col-md-1"
+                style="
+                  left: 90px;
+                  left: 90px;
+                  font-size: x-large;
+                  padding-top: 10px;
+                  font-family: 'Times New Roman', Times, serif;
+                "
+              >
+                WorkShop
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <div
+              class="container"
+              style="
+                margin-left: 180px;
+                border: 10px;
+                background-color: rgb(214, 233, 251);
+                color: black;
+                width: 330px;
+                height: 250px;
+              "
+            >
+              <img
+                src="Assets/image/image.png"
+                alt=""
+                style="width: 300px; height: 200px; padding-top: 15px"
+              />
+
+              <div
+                class="col-md-1"
+                style="
+                  left: 90px;
+                  font-size: x-large;
+                  padding-top: 10px;
+                  font-family: 'Times New Roman', Times, serif;
+                "
+              >
+                WorkShop
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="padding-top: 30px; padding-bottom: 40px; background-color: rgb(233, 225, 166)">
+      <h2 style="font-family: 'Times New Roman', Times, serif;">Gallery:</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <a href="" > <img src="Assets/image/image2.png" alt="" style="width: 350px; height: 300px;"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="" > <img src="Assets/image/image2.png" alt="" style="width: 350px; height: 300px;"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="" > <img src="Assets/image/image2.png" alt="" style="width: 350px; height: 300px;"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="" > <img src="Assets/image/image2.png" alt="" style="width: 350px; height: 300px;"></a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="padding-top: 20px; padding-bottom: 20px; padding-left: 30px;">
+      <h2>Featured Products:</h2>
+      <div class="row" style="padding-left: 20px;">
+        <div class="col-md-3">
+          <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+            <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); overflow: hidden; width: 300px; position: relative; border: 1px solid #ddd;">
+              <div style="position: absolute;  border-radius: 3px; background-color: chocolate; padding-right: 10px; padding-left: 5px;">10% dis</div>
+              <img src="Assets/image/about1.png" alt="" width="100%" height="250px" style=" object-fit: cover; padding: 20px 20px 5px 20px;">
+              <h3 style="margin: -5px 20px 5px; text-align: center;" > Marriage Photo package</h2>
+                <div style="padding-left: 10px; font-weight: 500; font-size: 18px; ">
+                  Rs.200,000
+                  <span style=" font-size: 15px;margin-bottom: 50px; text-decoration: line-through;">Rs220,000</span>
+                </div>
+                <button style="background-color: #5c2e0b; color: #fff; border: none; padding: 10px 15px; font-size: 14px; border-radius: 4px; margin-top: 10px; cursor: pointer;margin-left: 170px; position: relative; bottom: 40px; margin-left: 200px;">
+                  <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 20px;"> Add</i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+            <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); overflow: hidden; width: 300px; position: relative; border: 1px solid #ddd;">
+              <div style="position: absolute;  border-radius: 3px; background-color: chocolate; padding-right: 10px; padding-left: 5px;">10% dis</div>
+              <img src="Assets/image/about1.png" alt="" width="100%" height="250px" style=" object-fit: cover; padding: 20px 20px 5px 20px;">
+              <h3 style="margin: -5px 20px 5px; text-align: center;" > Marriage Photo package</h2>
+                <div style="padding-left: 10px; font-weight: 500; font-size: 18px; ">
+                  Rs.200,000
+                  <span style=" font-size: 15px;margin-bottom: 50px; text-decoration: line-through;">Rs220,000</span>
+                </div>
+                <button style="background-color: #5c2e0b; color: #fff; border: none; padding: 10px 15px; font-size: 14px; border-radius: 4px; margin-top: 10px; cursor: pointer;margin-left: 170px; position: relative; bottom: 40px; margin-left: 200px;">
+                  <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 20px;"> Add</i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+            <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); overflow: hidden; width: 300px; position: relative; border: 1px solid #ddd;">
+              <div style="position: absolute;  border-radius: 3px; background-color: chocolate; padding-right: 10px; padding-left: 5px;">10% dis</div>
+              <img src="Assets/image/about1.png" alt="" width="100%" height="250px" style=" object-fit: cover; padding: 20px 20px 5px 20px;">
+              <h3 style="margin: -5px 20px 5px; text-align: center;" > Marriage Photo package</h2>
+                <div style="padding-left: 10px; font-weight: 500; font-size: 18px; ">
+                  Rs.200,000
+                  <span style=" font-size: 15px;margin-bottom: 50px; text-decoration: line-through;">Rs220,000</span>
+                </div>
+                <button style="background-color: #5c2e0b; color: #fff; border: none; padding: 10px 15px; font-size: 14px; border-radius: 4px; margin-top: 10px; cursor: pointer;margin-left: 170px; position: relative; bottom: 40px; margin-left: 200px;">
+                  <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 20px;"> Add</i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+            <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); overflow: hidden; width: 300px; position: relative; border: 1px solid #ddd;">
+              <div style="position: absolute;  border-radius: 3px; background-color: chocolate; padding-right: 10px; padding-left: 5px;">10% dis</div>
+              <img src="Assets/image/about1.png" alt="" width="100%" height="250px" style=" object-fit: cover; padding: 20px 20px 5px 20px;">
+              <h3 style="margin: -5px 20px 5px; text-align: center;" > Marriage Photo package</h2>
+                <div style="padding-left: 10px; font-weight: 500; font-size: 18px; ">
+                  Rs.200,000
+                  <span style=" font-size: 15px;margin-bottom: 50px; text-decoration: line-through;">Rs220,000</span>
+                </div>
+                <button style="background-color: #5c2e0b; color: #fff; border: none; padding: 10px 15px; font-size: 14px; border-radius: 4px; margin-top: 10px; cursor: pointer;margin-left: 170px; position: relative; bottom: 40px; margin-left: 200px;">
+                  <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 20px;"> Add</i> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-left: 20px; padding-top: 20px; padding-bottom: 20px;">
+        <div class="col-md-3">
+          <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+            <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); overflow: hidden; width: 300px; position: relative; border: 1px solid #ddd;">
+              <div style="position: absolute;  border-radius: 3px; background-color: chocolate; padding-right: 10px; padding-left: 5px;">10% dis</div>
+              <img src="Assets/image/about1.png" alt="" width="100%" height="250px" style=" object-fit: cover; padding: 20px 20px 5px 20px;">
+              <h3 style="margin: -5px 20px 5px; text-align: center;" > Marriage Photo package</h2>
+                <div style="padding-left: 10px; font-weight: 500; font-size: 18px; ">
+                  Rs.200,000
+                  <span style=" font-size: 15px;margin-bottom: 50px; text-decoration: line-through;">Rs220,000</span>
+                </div>
+                <button style="background-color: #5c2e0b; color: #fff; border: none; padding: 10px 15px; font-size: 14px; border-radius: 4px; margin-top: 10px; cursor: pointer;margin-left: 170px; position: relative; bottom: 40px; margin-left: 200px;">
+                  <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 20px;"> Add</i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+            <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); overflow: hidden; width: 300px; position: relative; border: 1px solid #ddd;">
+              <div style="position: absolute;  border-radius: 3px; background-color: chocolate; padding-right: 10px; padding-left: 5px;">10% dis</div>
+              <img src="Assets/image/about1.png" alt="" width="100%" height="250px" style=" object-fit: cover; padding: 20px 20px 5px 20px;">
+              <h3 style="margin: -5px 20px 5px; text-align: center;" > Marriage Photo package</h2>
+                <div style="padding-left: 10px; font-weight: 500; font-size: 18px; ">
+                  Rs.200,000
+                  <span style=" font-size: 15px;margin-bottom: 50px; text-decoration: line-through;">Rs220,000</span>
+                </div>
+                <button style="background-color: #5c2e0b; color: #fff; border: none; padding: 10px 15px; font-size: 14px; border-radius: 4px; margin-top: 10px; cursor: pointer;margin-left: 170px; position: relative; bottom: 40px; margin-left: 200px;">
+                  <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 20px;"> Add</i> </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- footer start -->
+    <div class="container-fluid" style="background-color: rgb(233, 225, 166);padding-top: 20px; padding-bottom: 50px;">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Contact Us:</h2>
+           <i class="fa fa-camera-retro" aria-hidden="true" style="font-size: x-large;"> Radiant Memory </i><br>
+           <i class="fa fa-address-book" aria-hidden="true" style="font-size: x-large;"> Bharatpur-12, Chitwan</i><br>
+           <i class="fa fa-phone" aria-hidden="true" style="font-size: x-large;"> +977, 9392948944</i>  <br>
+           <i class="fa fa-envelope" aria-hidden="true" style="font-size: x-large;"> Radiant@gmail.com</i> 
+        </div>
+        <div class="col-md-3">
+          <h3>Quick Links:</h2>
+          <a href="" style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 20px;">About Us</a><br>
+          <a href="" style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 20px;">Specilist</a><br>
+          <a href="" style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 20px;">Blog</a><br>
+          <a href="" style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 20px;">Galary</a><br>
+          <a href="" style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 20px;">Contact Us</a>
+        </div>
+        <div class="col-md-3">
+          <h2>Google Map:</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14133.45628835434!2d84.4571225!3d27.6751403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994e5c6a13310a5%3A0x9436d48444c28ffc!2sISMT%20College%20Chitwan!5e0!3m2!1sen!2snp!4v1732467987188!5m2!1sen!2snp" width="300px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-3" style="padding-top: 50px;">
+          <a href="" style="font-size: xxx-large; padding-right: 20px;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="" style="font-size: xxx-large; color: rgb(228, 84, 168); padding-right: 20px;"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="" style="font-size: xxx-large; color: green; padding-right: 20px;"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="" style="font-size: xxx-large; color: rgb(86, 190, 86);" ><i class="fa fa-google" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
